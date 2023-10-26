@@ -1,0 +1,7 @@
+{
+    "model_params": {
+        "p_hidden_dim": 64,
+        "num_res_blocks": 3,
+        "activation": "relu"
+    }
+}

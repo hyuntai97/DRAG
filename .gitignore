@@ -1,0 +1,19 @@
+# log folder 
+log_fmnist/ 
+log_cifar/
+log_tabular/
+
+# data 
+cifar-10-batches-py/
+MyFMNIST/
+*.gz 
+
+# pycache 
+*.pyc 
+__pycache__/
+
+# shell script  
+*.sh 
+
+# notebooks 
+notebooks/

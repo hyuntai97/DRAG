@@ -1,0 +1,9 @@
+{
+    "model_params": {
+        "p_hidden_dim": 16,
+        "p_num_layers": 4,
+        "p_maxpool": "False",
+        "num_res_blocks": 3,
+        "activation": "relu"
+    }
+}
