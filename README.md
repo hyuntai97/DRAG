@@ -10,17 +10,17 @@ Paper Link: TBD
 
 ### FMNIST 
 ```
-python main.py --data_name {FMNIST} --normal_class {0} --batch_size {512} --epochs {150} --lr {0.005} --clr_lr {1e-5} --optim {0} --mom {0.0} --model_dir {./log_fmnist} --eval {1} --data_path {./data/} --metric {AUC} --k {50} --num_perturb {5} --cos_weight {1e-2} --nl_head {0} --lamda {1e-4} --num_channels {1} --enc_hidden_dim {16} --flat_dim {576} --mlp_hidden_dim {128} --mlp_num_layers {2} --mlp_activation {relu}
+python main_image.py --data_name {FMNIST} --normal_class {0} --batch_size {512} --epochs {150} --lr {0.005} --clr_lr {1e-5} --optim {0} --mom {0.0} --model_dir {./log_fmnist} --eval {1} --data_path {./data/} --metric {AUC} --k {50} --num_perturb {5} --cos_weight {1e-2} --nl_head {0} --lamda {1e-4} --num_channels {1} --enc_hidden_dim {16} --flat_dim {576} --mlp_hidden_dim {128} --mlp_num_layers {2} --mlp_activation {relu}
 ```
 
 ### CIFAR-10 
 ```
-python main.py --data_name {CIFAR10} --normal_class {0} --batch_size {512} --epochs {150} --lr {0.005} --clr_lr {1e-5} --optim {0} --mom {0.0} --model_dir {./log_cifar} --eval {1} --data_path {./data/} --metric {AUC} --k {30} --num_perturb {3} --cos_weight {1e-3} --nl_head {0} --lamda {1e-4} --num_channels {3} --enc_hidden_dim {32} --flat_dim {2048} --mlp_hidden_dim {128} --mlp_num_layers {3} --mlp_activation {leaky_relu}
+python main_image.py --data_name {CIFAR10} --normal_class {0} --batch_size {512} --epochs {150} --lr {0.005} --clr_lr {1e-5} --optim {0} --mom {0.0} --model_dir {./log_cifar} --eval {1} --data_path {./data/} --metric {AUC} --k {30} --num_perturb {3} --cos_weight {1e-3} --nl_head {0} --lamda {1e-4} --num_channels {3} --enc_hidden_dim {32} --flat_dim {2048} --mlp_hidden_dim {128} --mlp_num_layers {3} --mlp_activation {leaky_relu}
 ```
 
 ### Tabular (thyroid) 
 ```
-python main.py --data_name {thyroid} --batch_size {256} --epochs {100} --lr {0.005} --clr_lr {1e-5} --optim {0} --mom {0.0} --model_dir {./log_tabular} --eval {1} --data_path {./data/} --metric {F1} --k {100} --num_perturb {5} --cos_weight {1e-1} --nl_head {0} --nl_mlp {0} --lamda {1} --enc_hidden_dim {64} --mlp_hidden_dim {32} --mlp_num_layers {2} --mlp_activation {relu} 
+python main_tabular.py --data_name {thyroid} --batch_size {256} --epochs {100} --lr {0.005} --clr_lr {1e-5} --optim {0} --mom {0.0} --model_dir {./log_tabular} --eval {1} --data_path {./data/} --metric {F1} --k {100} --num_perturb {5} --cos_weight {1e-1} --nl_head {0} --nl_mlp {0} --lamda {1} --enc_hidden_dim {64} --mlp_hidden_dim {32} --mlp_num_layers {2} --mlp_activation {relu} 
 ```
 
 ### Base arguments 
